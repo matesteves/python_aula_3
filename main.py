@@ -97,18 +97,74 @@
 
 # Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
 
-vendas = [
-    {"categoria": "eletrônicos", "valor": 1200},
-    {"categoria": "livros", "valor": 200},
-    {"categoria": "eletrônicos", "valor": 800}
-]
+#vendas = [
+#    {"categoria": "eletrônicos", "valor": 1200},
+#    {"categoria": "livros", "valor": 200},
+#    {"categoria": "eletrônicos", "valor": 800}
+#]
+#
+#agregado = {}
+#for venda in vendas:
+#    category = venda["categoria"]
+#    total = venda["valor"]
+#    if category in agregado:
+#        agregado[category] += total
+#    else:
+#        agregado[category] = total
+#print(agregado)
 
-agregado = {}
-for venda in vendas:
-    category = venda["categoria"]
-    total = venda["valor"]
-    if category in agregado:
-        agregado[category] += total
-    else:
-        agregado[category] = total
-print(agregado)
+# Objetivo: Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
+
+#dados = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#index = 0
+#entrada = ""
+#while entrada.lower() != "sair":
+#    print(dados[index])
+#    entrada = input("Qual a entrada? ")
+#    print("A entrada é: ", entrada)
+#    index += 1
+
+# Objetivo: Solicitar ao usuário um número dentro de um intervalo específico até que a entrada seja válida.
+
+#a = int(input("Digite um número entre 1 e 10: "))
+#b = [1, 10]
+#
+#while not (b[0] <= a <= b[1]):
+#    a = int(input("Digite um número entre 1 e 10: "))
+#print(f"Esse é o número escolhido: {a}")
+
+# Objetivo: Simular o consumo de uma API paginada, onde cada "página" de dados é processada em loop até que não haja mais páginas.
+
+#pagina_atual = 1
+#numero_de_paginas = 10
+#
+#while pagina_atual <= numero_de_paginas:
+#    print(f"Processando páginas. Página {pagina_atual} de {numero_de_paginas}")
+#    # Código de processamento aqui
+#    pagina_atual += 1
+#print("Processamento Concluído")
+
+# Objetivo: Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
+
+#tentativa = 1
+#numero_maximo = 10
+#
+#while tentativa <= numero_maximo:
+#    print(f"Tentativa {tentativa}, tentando reconectar-se.")
+#    # código de reconexão
+#    reconexao = False
+#    if reconexao:
+#        print("Conexão bem-sucedida!")
+#    tentativa += 1
+#print("Time Out.")
+
+# Objetivo: Processar itens de uma lista até encontrar um valor específico que indica a parada.
+
+#itens = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#valor_procurado = 7
+#index = 0
+#
+#while itens[index] != valor_procurado:
+#    print(itens[index], " não é o valor esperado. Continuando a busca.")
+#    index += 1
+#print("O valor ", itens[index], " foi encontrado na lista!")
