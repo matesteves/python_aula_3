@@ -47,3 +47,68 @@
 #
 #if transacao['valor'] > 12000 or transacao['valor'] > 18 or transacao['valor'] < 9:
 #    print("Transação Suspeita")
+
+#Dado um texto, contar quantas vezes cada palavra única aparece nele.
+
+#texto = "a raposa marrom salta sobre o cachorro preguiçoso raposa"
+#palavras = texto.split()
+#contagem = {}
+#
+#for palavra in palavras:
+#    if palavra in contagem:
+#        contagem[palavra] += 1
+#    else:
+#        contagem[palavra] = 1
+#
+#print(contagem)
+
+# Normalizar uma lista de números para que fiquem na escala de 0 a 1.
+
+#numeros = [10, 20, 30, 40, 50]
+#numeros.sort()
+#minimo = min(numeros)
+#maximo = max(numeros)
+#normalizados = [(x - minimo) / (maximo - minimo) for x in numeros]
+#
+#print(normalizados)
+
+# Dada uma lista de dicionários representando dados de usuários, filtrar aqueles que têm um campo específico faltando.
+
+#usuarios = [
+#    {"nome": "Alice", "email": "alice@example.com"},
+#    {"nome": "Bob", "email": ""},
+#    {"nome": "Carol", "email": "carol@example.com"}
+#]
+#
+#for users in usuarios:
+#    for info in users:
+#        if users[info] == "":
+#            print("Usuário: ", users["nome"])
+
+# Dada uma lista de números, extrair apenas aqueles que são pares.
+
+#numeros = range(1, 11)
+#pares = []
+#
+#for i in numeros:
+#    if i % 2 == 0:
+#        pares.append(i)
+#print(pares)
+
+# Dado um conjunto de registros de vendas, calcular o total de vendas por categoria.
+
+vendas = [
+    {"categoria": "eletrônicos", "valor": 1200},
+    {"categoria": "livros", "valor": 200},
+    {"categoria": "eletrônicos", "valor": 800}
+]
+
+agregado = {}
+for venda in vendas:
+    category = venda["categoria"]
+    total = venda["valor"]
+    if category in agregado:
+        agregado[category] += total
+    else:
+        agregado[category] = total
+print(agregado)
